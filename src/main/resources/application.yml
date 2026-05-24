@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: jdbc:mariadb://localhost:3306/mall
+    url: jdbc:mariadb://root:SprrdToyEpPnjTITlVhRHWerNFTpCvOB@kodama.proxy.rlwy.net:10629/railway
     username: root
-    password: 12345
+    password: SprrdToyEpPnjTITlVhRHWerNFTpCvOB
     driver-class-name: org.mariadb.jdbc.Driver
   jpa:
     hibernate:
