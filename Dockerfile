@@ -5,10 +5,7 @@ WORKDIR /app
 COPY . .
 
 RUN chmod +x gradlew
-RUN ./gradlew clean build -x test
-
-# 🔥 핵심: Gradle이 toolchain 쓰지 않게 강제
-RUN ./gradlew clean build -x test --no-daemonv
+RUN ./gradlew clean build -x test --no-daemon
 
 EXPOSE 8080
 
