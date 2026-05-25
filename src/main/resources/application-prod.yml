@@ -1,20 +1,15 @@
 spring:
-  profiles:
-    active: prod
-
   datasource:
-    url: jdbc:mariadb://kodama.proxy.rlwy.net:10629/railway
+    url: jdbc:mysql://kodama.proxy.rlwy.net:10629/railway
     username: root
     password: SprrdToyEpPnjTITlVhRHWerNFTpCvOB
-    driver-class-name: org.mariadb.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
   jpa:
+    database-platform: org.hibernate.dialect.MariaDBDialect
     hibernate:
-      database-platform: org.hibernate.dialect.MariaDBDialect   
-
-      hibernate:
-        ddl-auto: update
-
-    show-sql: true    
+      ddl-auto: update
+    show-sql: true
 
 server:
   address: 0.0.0.0
