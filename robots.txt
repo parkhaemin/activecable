@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://parkhaemin.github.io/mall/sitemap.xml
