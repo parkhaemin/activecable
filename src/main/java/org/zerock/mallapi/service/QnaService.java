@@ -15,4 +15,6 @@ public interface QnaService {
     Qna update(Long id, Qna qna);
 
     void delete(Long id);
+
+    void reply(Long qno, String reply);
 }
